@@ -1,0 +1,130 @@
+.parent {
+	min-height: inherit;
+	margin-top: 5rem;
+	margin-left: 0px;
+	padding-top: 0px;
+	width: max-content;
+}
+
+#records-parent {
+	width: 20%;
+}
+
+#main-parent {
+	width: 60%;
+}
+
+#annot-parent {
+	width: 20%;
+}
+
+.parent-head {
+	font-size: larger;
+	height: 4rem;
+	font-weight: 800;
+	background-color: #5344C7 !important;
+	color: white !important;
+}
+
+.my-badge {
+	background-color: #5344C7;
+	border: 2px solid white;
+	margin: 0px 1rem;
+	display: flex;
+	font-size: larger;
+}
+
+#people-num,
+#org-num {
+	font-size: small;
+	text-align: end;
+	display: flex;
+	align-items: flex-end;
+	padding-left: 0.5rem;
+}
+
+.my-badge:hover {
+	cursor: pointer;
+}
+
+.my-badge.active {
+	background-color: white;
+	color: #5344C7;
+}
+
+.parent-head,
+.record-row {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0px;
+}
+
+.record-row {
+	border-bottom: 2px solid gray;
+	height: 3rem;
+}
+
+.record-row:hover {
+	background-color: rgb(203, 224, 231);
+	cursor: pointer;
+}
+
+.record-row.active {
+	background-color: rgb(203, 224, 231);
+
+}
+
+.main-content {
+	padding: 1rem;
+	font-size: large;
+	font-weight: 400;
+	color: rgb(68, 67, 67);
+	border-right: 2px solid gray;
+	height: 100%;
+	word-spacing: 8px;
+	line-height: 2;
+}
+
+.annot-word {
+	background-color: #FAE191;
+	font-weight: 600;
+	font-size: large;
+	padding: 0.3rem 0.1rem;
+	margin: 0rem 0.4rem;
+	border-radius: 5px;
+	word-spacing: 2px;
+}
+
+.annot-type {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: blue;
+}
+
+.annot-row {
+	text-align: center;
+	margin: 1rem 0rem;
+	font-size: large;
+	font-weight: 600;
+}
+
+.add-annot {
+	font-size: larger;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+.add-annot:hover {
+	transform: scale(1.12);
+}
+
+.remove {
+	font-size: 20px;
+	color: #412dd6;
+	cursor: pointer;
+	transform: scale(1);
+}
+
+.remove:hover {
+	transform: scale(1.12);
+}
