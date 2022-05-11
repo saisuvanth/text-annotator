@@ -35,7 +35,7 @@ function App() {
       <h1 className='heading'>Annotator</h1>
       <div className="App">
         <Records array={array} handleClick={setRecord} />
-        <MainContent record={mainArray[record]} annotList={annotations} />
+        <MainContent record={mainArray[record]?.split(' ')} annotList={annotations} setAnnotList={setAnnotations} />
         <Annotations annots={annotations} setAnnots={setAnnotations} />
       </div>
     </>

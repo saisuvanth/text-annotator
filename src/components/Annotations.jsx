@@ -8,11 +8,12 @@ const Annotations = ({ annots, setAnnots }) => {
 	const [type, setType] = useState('');
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
+
 	const handleClick = (index) => {
-		console.log([...annots.slice(0, index), ...annots.slice(index + 1)]);
 		setAnnots(prev => [...prev.slice(0, index), ...prev.slice(index + 1)]);
 		localStorage.setItem('annotations', JSON.stringify([...annots.slice(0, index), ...annots.slice(index + 1)]));
 	}
+
 	function handleSubmit(event) {
 		event.preventDefault();
 		const form = event.target;
@@ -23,6 +24,7 @@ const Annotations = ({ annots, setAnnots }) => {
 		}
 		console.log(newAnnot);
 		setAnnots(prev => [...prev, newAnnot]);
+		localStorage.setItem('annotations', JSON.stringify([...annots, newAnnot]));
 	}
 	return (
 		<div className='parent' id='annot-parent'>
